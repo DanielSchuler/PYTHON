@@ -1,0 +1,6 @@
+# libreria para coenctar a postgresql
+
+pip install psycopg2
+
+# para conectar a mySQL
+pip install mysql-connector

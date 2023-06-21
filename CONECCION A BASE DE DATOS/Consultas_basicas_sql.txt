@@ -1,0 +1,40 @@
+# palabras reservadas en mayusculas y columnas, tablas y registros en minusculas
+
+SELECT * FROM persona
+
+
+# para restringir el numero de datos extraidos de la consulta se usa el WHERE
+
+SELECT * FROM persona WHERE id_persona = 1
+
+# para seleccionar varios registros restringido
+# si se declara un registro no existente solo traera aquellos requistros que existen
+
+para comentar una sentencia en script de SQL se usa --
+
+SELECT * FROM persona WHERE id_persona IN (1,2)
+
+
+# para insertar datos en una tabla se usa INSERT INTO para definir la tabla y las columnas
+# Usamos VALUES() para definir los valores que vamos a insertar
+
+INSERT INTO persona(nombre,apellido,email) VALUES('Susana','Ramirez','susana.ramirez@gmail.com')
+
+
+# para actualizar un registro usamos UPDATE la tabla que vamos a modificar y usamos SET para definir
+# las columnas que vamos a modificar para todos los registros
+# con el WHERE puedo especificar exactamente el registro
+
+UPDATE persona SET nombre = 'Ivonne', email = 'imeza@gmail.com' WHERE id_persona = 3
+
+
+# para eliminar 1 o varios registros se usa DELETE despues la tabla usando FROM
+# si se escribe DELETE FROM persona se eliminaran todos los registros de la tabla
+
+# para especificar el registro exacto se utilizara el WHERE
+
+DELETE FROM persona WHERE id_persona = 2
+
+# si se quiere eliminar varios registros se usa el IN
+
+DELETE FROM persona WHERE id_persona in (1,2,3)

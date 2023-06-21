@@ -1,0 +1,3 @@
+Pelicula: [Id: 1, Nombre: avengers] 
+Pelicula: [Id: 2, Nombre: batman] 
+Pelicula: [Id: 3, Nombre: batman] 
